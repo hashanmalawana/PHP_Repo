@@ -6,16 +6,16 @@
  $last_name = 'malawana';
  $email = 'hashanrique@gmail.com';
  $password = 'mypass';
- $is_deleted = 0;
+ $is_delete = 0;
 
  $hashed_password = sha1($password); 
 
-$query = "INSERT INTO user (first_name, last_name, email, password,is_deleted) VALUES ('{$first_name}', '{$last_name}', '{$email}', '{$password}', {$is_deleted})";
+$query = "INSERT INTO user (first_name, last_name, email, password,is_delete) VALUES ('{$first_name}', '{$last_name}', '{$email}', '{$password}', {$is_delete})";
 
-$result = mysql_query($connection, $query);
+$result = mysqli_query($connection, $query);
 
 
-if($result){
+if($result) {
 	echo "Hari";
 }
 else{
